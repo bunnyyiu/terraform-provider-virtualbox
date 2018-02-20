@@ -74,6 +74,7 @@ func gatherDisks(path string) ([]string, error) {
 	}
 	return disks, nil
 }
+
 func (img *Image) verify() error {
 	// Makes sure the file cursor is positioned at the beginning of the file
 	_, err := img.file.Seek(0, 0)
